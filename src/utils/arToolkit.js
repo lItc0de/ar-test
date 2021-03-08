@@ -1,5 +1,5 @@
 /* globals THREEx */
-import cameraData from 'static/camera_para.dat';
+import cameraData from '../static/camera_para.dat';
 
 
 const { ArMarkerControls, ArToolkitContext, ArToolkitSource } = THREEx;

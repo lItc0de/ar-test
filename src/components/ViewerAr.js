@@ -1,8 +1,8 @@
 /* globals THREE */
 import { useEffect, useState } from 'react';
 
-import initializeRenderer from 'utils/initializeRenderer';
-import { initializeArToolkit, getMarker } from 'utils/arToolkit';
+import initializeRenderer from '../utils/initializeRenderer';
+import { initializeArToolkit, getMarker } from '../utils/arToolkit';
 
 const { Camera, Scene } = THREE;
 

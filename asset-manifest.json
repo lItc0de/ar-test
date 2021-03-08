@@ -12,12 +12,12 @@
     "index.html": "/ar-test/index.html",
     "static/css/main.4904b1e0.chunk.css.map": "/ar-test/static/css/main.4904b1e0.chunk.css.map",
     "static/js/2.b3a5a382.chunk.js.LICENSE.txt": "/ar-test/static/js/2.b3a5a382.chunk.js.LICENSE.txt",
-    "static/marker/digitalls_marker.fset": "/ar-test/static/marker/digitalls_marker.fset",
-    "static/marker/digitalls_marker.fset3": "/ar-test/static/marker/digitalls_marker.fset3",
-    "static/marker/digitalls_marker.iset": "/ar-test/static/marker/digitalls_marker.iset",
-    "static/marker/fabricant_marker.fset": "/ar-test/static/marker/fabricant_marker.fset",
-    "static/marker/fabricant_marker.fset3": "/ar-test/static/marker/fabricant_marker.fset3",
-    "static/marker/fabricant_marker.iset": "/ar-test/static/marker/fabricant_marker.iset",
+    "static/markers/digitalls_marker.fset": "/ar-test/static/markers/digitalls_marker.fset",
+    "static/markers/digitalls_marker.fset3": "/ar-test/static/markers/digitalls_marker.fset3",
+    "static/markers/digitalls_marker.iset": "/ar-test/static/markers/digitalls_marker.iset",
+    "static/markers/fabricant_marker.fset": "/ar-test/static/markers/fabricant_marker.fset",
+    "static/markers/fabricant_marker.fset3": "/ar-test/static/markers/fabricant_marker.fset3",
+    "static/markers/fabricant_marker.iset": "/ar-test/static/markers/fabricant_marker.iset",
     "static/media/camera_para.fb94e301.dat": "/ar-test/static/media/camera_para.fb94e301.dat"
   },
   "entrypoints": [

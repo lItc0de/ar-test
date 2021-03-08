@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ar-test/static/css/main.4904b1e0.chunk.css",
+    "main.js": "/ar-test/static/js/main.4b24dec8.chunk.js",
+    "main.js.map": "/ar-test/static/js/main.4b24dec8.chunk.js.map",
+    "runtime-main.js": "/ar-test/static/js/runtime-main.8e999319.js",
+    "runtime-main.js.map": "/ar-test/static/js/runtime-main.8e999319.js.map",
+    "static/js/2.b3a5a382.chunk.js": "/ar-test/static/js/2.b3a5a382.chunk.js",
+    "static/js/2.b3a5a382.chunk.js.map": "/ar-test/static/js/2.b3a5a382.chunk.js.map",
+    "static/js/3.cd36650a.chunk.js": "/ar-test/static/js/3.cd36650a.chunk.js",
+    "static/js/3.cd36650a.chunk.js.map": "/ar-test/static/js/3.cd36650a.chunk.js.map",
+    "index.html": "/ar-test/index.html",
+    "static/css/main.4904b1e0.chunk.css.map": "/ar-test/static/css/main.4904b1e0.chunk.css.map",
+    "static/js/2.b3a5a382.chunk.js.LICENSE.txt": "/ar-test/static/js/2.b3a5a382.chunk.js.LICENSE.txt",
+    "static/media/camera_para.fb94e301.dat": "/ar-test/static/media/camera_para.fb94e301.dat"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e999319.js",
+    "static/js/2.b3a5a382.chunk.js",
+    "static/css/main.4904b1e0.chunk.css",
+    "static/js/main.4b24dec8.chunk.js"
+  ]
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import ViewerAR from './components/ViewerAr';
 
-function App() {
+const App = () => {
+  let vh =
+    ((document &&
+      document.documentElement &&
+      document.documentElement.clientHeight) ||
+      window.innerHeight) * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+  window.addEventListener("resize", () => {
+    vh =
+      ((document &&
+        document.documentElement &&
+        document.documentElement.clientHeight) ||
+        window.innerHeight) * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ViewerAR />
     </div>
   );
 }

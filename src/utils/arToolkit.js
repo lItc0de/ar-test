@@ -1,7 +1,6 @@
 /* globals THREEx */
 import cameraData from '../static/camera_para.dat';
 
-
 const { ArMarkerControls, ArToolkitContext, ArToolkitSource } = THREEx;
 
 export const initializeArToolkit = (renderer, camera, onRenderFcts) => {
@@ -18,12 +17,18 @@ export const initializeArToolkit = (renderer, camera, onRenderFcts) => {
   };
 
   arToolkitSource.init(() => {
-    onResize();
+    setTimeout(() => {
+      onResize();
+    }, 1000);
   });
 
   window.addEventListener('resize', () => {
     onResize();
   });
+
+  window.addEventListener('arjs-nft-loaded', function(ev){
+    console.log(ev);
+  })
 
   // create atToolkitContext
   const arToolkitContext = new ArToolkitContext({
@@ -47,8 +52,8 @@ export const initializeArToolkit = (renderer, camera, onRenderFcts) => {
 
 export const getMarker = (arToolkitContext, camera) => {
   return new ArMarkerControls(arToolkitContext, camera, {
-    type : 'nft',
-    descriptorsUrl : 'markers/digitalls_marker',
-    changeMatrixMode: 'cameraTransformMatrix'
+    type: 'nft',
+    descriptorsUrl: 'ar-test/static/markers/digitalls_marker',
+    changeMatrixMode: 'cameraTransformMatrix',
   });
 };

@@ -30,6 +30,10 @@ const ViewerAR = () => {
       setMarkerFound(true);
     });
 
+    marker.addEventListener('markerLost', () => {
+      setMarkerFound(false);
+    });
+
     // var light = new AmbientLight(0x404040, props.light); // white light
     // scene.add(light);
 
@@ -48,9 +52,9 @@ const ViewerAR = () => {
   return (
     <div>
       <canvas ref={storeRef} />
-      {!markerFound && (
+      {markerFound && (
         <div>
-          <h1>Marker found</h1>
+          <h1>Hello</h1>
         </div>
       )}
     </div>

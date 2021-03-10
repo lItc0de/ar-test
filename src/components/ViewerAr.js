@@ -42,7 +42,24 @@ const ViewerAR = () => {
       renderer.render(scene, camera);
     });
 
-    // eslint-disable-next-line
+    // run the rendering loop
+    let lastTimeMsec = null;
+
+    const animate = (nowMsec) => {
+      // keep looping
+      requestAnimationFrame(animate);
+      // measure time
+      lastTimeMsec = lastTimeMsec || nowMsec - 1000 / 60;
+      const deltaMsec = Math.min(200, nowMsec - lastTimeMsec);
+      lastTimeMsec = nowMsec;
+      // call each update function
+      onRenderFcts.forEach((onRenderFct) => {
+        onRenderFct(deltaMsec / 1000, nowMsec / 1000);
+      });
+    };
+    requestAnimationFrame(animate);
+
+    /* eslint-disable-next-line */
   }, []);
 
   const storeRef = (node) => {

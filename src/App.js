@@ -1,4 +1,4 @@
-import ViewerAR from './components/ViewerAr';
+import ViewerAF from './components/ViewerAF';
 
 const App = () => {
   let vh =
@@ -6,22 +6,22 @@ const App = () => {
       document.documentElement &&
       document.documentElement.clientHeight) ||
       window.innerHeight) * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-  window.addEventListener("resize", () => {
+  window.addEventListener('resize', () => {
     vh =
       ((document &&
         document.documentElement &&
         document.documentElement.clientHeight) ||
         window.innerHeight) * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
 
   return (
     <div className="App">
-      <ViewerAR />
+      <ViewerAF />
     </div>
   );
-}
+};
 
 export default App;
